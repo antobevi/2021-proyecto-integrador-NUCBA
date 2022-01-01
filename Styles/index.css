@@ -1,5 +1,93 @@
+/*Ver de agregar las fuentes descargadas*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
 
 body {
     font-family: 'Varela Round', sans-serif;
+}
+
+.front-page {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background-color: blue;
+}
+
+.owners-section {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 725px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background-color: red;
+}
+
+.rescuers-section {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 1350px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background-color: violet;
+}
+
+.adopters-section {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 1975px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background-color: palevioletred;
+}
+
+.contact-us-section {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 2600px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background-color: green;
+}
+
+.us-section {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    top: 3125px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    background-color: yellowgreen;
 }
