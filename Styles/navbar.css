@@ -1,0 +1,54 @@
+.nav-section {
+    background-color: #FFDC5E;
+    margin: 0px;
+    width: 1366px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    margin: 20px;
+    background-image: url("../Images/adopcion.png");
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.links {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+    color: #FF86C8;
+}
+
+.links-button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+}
+
+.log-in-button {
+    margin: 40px;
+    padding: 15px;
+    color: white;
+    border-style: none;
+    border-radius:35px;
+    background-color: #FFA3A5;
+}
+
+.log-in-button:hover {
+    background-color: #FF69EB;
+}
