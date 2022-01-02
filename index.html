@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -20,10 +21,11 @@
 <body>
 
     <header>
-        <nav class="nav-section"> <!-- Ver como abstraer el navbar despues -->
+        <nav class="nav-section">
+            <!-- Ver como abstraer el navbar despues -->
             <div class="logo"></div>
             <div class="center-section">
-                <a class="links" href="index.html">Home</a>
+                <a class="links" href="#front-page">Home</a>
                 <a class="links" href="#owners">Dueños</a>
                 <a class="links" href="#rescuers">Rescatistas</a>
                 <a class="links" href="#adopters">Adoptantes</a>
@@ -37,17 +39,32 @@
         </nav>
     </header>
 
-    <div class="front-page"></div>
+    <div class="front-page" id="front-page">
+        <p class="title" style="height: 1px;">Rescatando patitas</p>
+        <p style="font-family: 'Amatic SC', cursive; font-size: 40px;">No vamos a cambiar el mundo ayudando a un animal,
+            pero al menos el mundo habrá cambiado para él.</p>
+        <img src="./Images/casa-de-mascotas.png" style="background-size: cover; width: 200px; height: 200px;">
+    </div>
 
-    <div class="us-section" id="us"></div>
-    
-    <div class="owners-section" id="owners"></div>
+    <div class="owners-section" id="owners">
+        <div class="information-section">
+            <p class="title" style="height: 5px;">Dueños</p>
+            <p style="font-size: 20px; width: 50%;">Acá vas a poder registrar a todas tus mascotas. Si alguna vez una se
+                pierde, podes generar un aviso y de esa forma será más fácil encontrarla!</p>
+            <button class="button-sections">
+                <a class="links-button" href="#">Quiero registrar a mi mascota</a>
+            </button>
+        </div>
+        <div class="owners-section-background"></div>
+    </div>
 
     <div class="rescuers-section" id="rescuers"></div>
 
-    <div class="adopters-section" id="adopters"></div>
+    <div class="us-section" id="us"></div>
 
     <div class="contact-us-section" id="contact-us"></div>
+
+    <div class="adopters-section" id="adopters"></div>
 
 </body>
 
