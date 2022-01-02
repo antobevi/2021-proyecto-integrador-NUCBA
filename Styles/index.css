@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Staatliches&family=Varela+Round&display=swap');
 
+::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll sin deshabilitarla */
+}
+
 body {
     font-family: 'Varela Round', sans-serif;
 }
@@ -62,9 +66,18 @@ body {
     top: 1350px;
     left: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
+}
+
+.recuers-section-background {
+    background-image: url(../Images/mascotas-rescatadas.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 160%;
+    height: 100%;
+    position: relative;
 }
 
 .adopters-section {
@@ -78,7 +91,7 @@ body {
     align-items: center;
     position: absolute;
 
-    background-color: palevioletred;
+    background-color: #FFA3A5;
 }
 
 .us-section {
@@ -91,8 +104,6 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-
-    background-color: green;
 }
 
 .contact-us-section {
@@ -106,7 +117,21 @@ body {
     align-items: center;
     position: absolute;
 
-    background-color: yellowgreen;
+    /* background-color: #FFBF81; */
+    background-image: url(../Images/fondo-mascotas.jpg);
+}
+
+.footer-section {
+    margin: 0px;
+    width: 1366px;
+    height: 100px;
+    top: 3850px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbf00;
+    position: absolute;
 }
 
 .button-sections {
