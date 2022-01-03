@@ -117,8 +117,7 @@ body {
     align-items: center;
     position: absolute;
 
-    /* background-color: #FFBF81; */
-    background-image: url(../Images/fondo-mascotas.jpg);
+    background-color: #FFBF81;
 }
 
 .footer-section {

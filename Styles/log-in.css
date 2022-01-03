@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Staatliches&family=Varela+Round&display=swap');
+
+body {
+    background-image: url(../Images/fondo-mascotas.jpg);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-section {
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #c9184a;
+}
+
+.form-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-section {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    width: 20%;
+    font-size: 18px;
+    color: white;
+}
+
+input {
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+}
+
+button {
+    width: 70%;
+    height: 45px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    border: none;
+    border-radius: 25px;
+    background-color: #973aa8;
+    color: white;
+}
+
+button:hover {
+    background-color: #c05299;
+}
+
+.new-user-section {
+    width: 100%;
+    height: 5%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #FFDC5E;
+}
