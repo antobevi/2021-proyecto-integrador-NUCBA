@@ -56,13 +56,14 @@ label {
 input {
     width: 70%;
     height: 40px;
+    font-size: 16px;
     border-radius: 20px;
     border: none;
     padding: 20px;
 }
 
 button {
-    width: 70%;
+    width: 80%;
     height: 45px;
     margin-top: 20px;
     font-weight: 600;
@@ -70,12 +71,12 @@ button {
     letter-spacing: 0.6px;
     border: none;
     border-radius: 25px;
-    background-color: #973aa8;
+    background-color: #f9564f;
     color: white;
 }
 
 button:hover {
-    background-color: #c05299;
+    background-color: #ff8500;
 }
 
 .new-user-section {
