@@ -6,10 +6,26 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
+    overflow-x: hidden;
 }
 
+.title {
+    height: 10px;
+    font-family: 'Staatliches', cursive; 
+    font-size: 100px;
+}
+
+.information-section { /* Descripción de cada sección que se muestra en la home */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Portada de la página */
+
 .front-page {
-    margin: 0px;
     width: 100%;
     height: 100%;
     top: 100px;
@@ -22,14 +38,9 @@ body {
     color: #ff9770; /*ffad01 amarillo, ff958c rojo anaranjado*/
 }
 
-.title {
-    height: 5px;
-    font-family: 'Staatliches', cursive; 
-    font-size: 100px;
-}
+/* Seccion de dueños */
 
 .owners-section {
-    margin: 0px;
     width: 100%;
     height: 100%;
     top: 725px;
@@ -43,14 +54,6 @@ body {
     color: white;
 }
 
-.information-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .owners-section-background {
     background-image: url(../Images/fondo-perrito.jpg);
     background-size: cover;
@@ -60,8 +63,9 @@ body {
     position: relative;
 }
 
+/* Seccion de rescatistas */
+
 .rescuers-section {
-    margin: 0px;
     width: 100%;
     height: 100%;
     top: 1350px;
@@ -81,8 +85,9 @@ body {
     position: relative;
 }
 
+/* Seccion de adoptantes */
+
 .adopters-section {
-    margin: 0px;
     width: 100%;
     height: 100%;
     top: 1975px;
@@ -104,8 +109,9 @@ body {
     position: relative;
 }
 
+/* Seccion explicativa de la organización */
+
 .us-section {
-    margin: 0px;
     width: 100%;
     height: 100%;
     top: 2600px;
@@ -119,70 +125,28 @@ body {
 /* Seccion contactanos */
 
 .contact-us-section {
-    margin: 0px;
-    padding: 10px;
     width: 100%;
     height: 100%;
     top: 3225px;
     left: 0px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
 
     color: white;
-    background-color: #FFBF81;
+    background-color: #ff7f51;
 }
 
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-label {
-    width: 40%;
-    font-size: 18px;
-    color: white;
-}
-
-input {
-    width: 100%;
-    height: 5px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: none;
-    padding: 20px;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: none;
-    padding: 20px;
-}
-
-.input-section {
-    width: 100%;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-us-container {
+.container-contact-us {
     width: 100%;
     height: 100%;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* Footer de la pagina */
 
 .footer-section {
     margin: 0px;
@@ -195,6 +159,67 @@ textarea {
     align-items: center;
     background-color: #ffbf00;
     position: absolute;
+}
+
+/* Definición de estilos de otras cosas */
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label {
+    width: 15%;
+    font-size: 18px;
+    color: white;
+}
+
+.input-section {
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    height: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+}
+
+input:focus {
+    outline: #dd2d4a solid;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    resize: none; /* Para que no se pueda agrandar */
+}
+
+textarea:focus {
+    outline: #dd2d4a solid;
 }
 
 button {

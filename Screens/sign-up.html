@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Rescatando patitas</title>
+
+    <link rel="shortcut icon" href="../Images/pata.ico" />
+
+    <link href="../Styles/sign-up.css" rel=stylesheet>
+
+    <link href="./navbar.html" rel="import" />
+    <link href="./footer.html" rel="import" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="new-user-container">
+            <!-- Caja flex en columnas -->
+            <p class="title">Nuevo usuario</p>
+            
+            <div class="user-info-container">
+                <!-- Caja flex con elemento uno al lado del otro -->
+                <div class="form-container">
+                    <form>
+                        <div class="input-section">
+                            <label for="name">Nombre y apellido</label>
+                            <input type="text" id="name" placeholder="Ingrese su nombre y apellido">
+                        </div>
+                        <div class="input-section">
+                            <label for="birth-date">Fecha de nacimiento</label>
+                            <input type="date" id="birth-date" placeholder="Ingrese fecha de nacimiento">
+                        </div>
+                        <div class="input-section">
+                            <label for="document">Tipo de documento</label>
+                            <select class="select-style" name="type-of-document" id="document">
+                                <option value="DNI" selected>DNI</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="LI">Libreta Cívica</option>
+                                <option value="LE">Libreta de Enrolamiento</option>
+                                <option value="CI">Cédula de Identidad</option>
+                            </select>
+                        </div>
+                        <div class="input-section">
+                            <label for="number-document">Número de documento</label>
+                            <input type="text" id="number-document" placeholder="Ingrese su número de documento">
+                        </div>
+                        <div class="input-section">
+                            <label for="number-phone">Número de teléfono</label>
+                            <input type="te" id="number-phone" placeholder="Ingrese su número de teléfono">
+                        </div>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <div class="input-section">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Ingrese su email">
+                        </div>
+                        <div class="input-section">
+                            <label for="user-name">Usuario</label>
+                            <input type="text" id="user-name" placeholder="Ingrese su nombre de usuario">
+                        </div>
+                        <div class="input-section">
+                            <label for="first-password">Contraseña</label>
+                            <input type="password" id="first-password" placeholder="Ingrese una contraseña">
+                        </div>
+                        <div class="input-section">
+                            <label for="repeat-password">Repita contraseña</label>
+                            <input type="password" id="repeat-password" placeholder="Ingrese de nuevo la contraseña">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <button>Crear usuario</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
