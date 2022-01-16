@@ -112,3 +112,8 @@ button {
 button:hover {
     background-color: #ff4d6d;
 }
+
+a {
+    text-decoration: none; 
+    color: white;
+}
