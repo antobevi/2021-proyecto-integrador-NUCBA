@@ -146,21 +146,6 @@ body {
     align-items: center;
 }
 
-/* Footer de la pagina */
-
-.footer-section {
-    margin: 0px;
-    width: 1366px;
-    height: 100px;
-    top: 3850px;
-    left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffbf00;
-    position: absolute;
-}
-
 /* Definición de estilos de otras cosas */
 
 .form-section {

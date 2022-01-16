@@ -1,3 +1,20 @@
 .footer-section {
+    width: 100%;
+    height: 100px;
+    top: 3850px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #FFDC5E;
+    color: white;
+    position: absolute;
+}
+
+.credits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
