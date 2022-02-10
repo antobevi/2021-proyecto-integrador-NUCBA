@@ -26,6 +26,8 @@
     font-size: 18px;
     text-decoration: none;
     color: white;
+
+    transition: color 1s;
 }
 
 .links:hover {
@@ -47,8 +49,10 @@
     border-style: none;
     border-radius:35px;
     background-color: #f9779b;
+
+    transition: background-color 1s;
 }
 
 .log-in-button:hover {
-    background-color: #FF69EB;
+    background-color: #fb97ee;
 }
