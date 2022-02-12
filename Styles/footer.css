@@ -1,7 +1,7 @@
 .footer-section {
     width: 100%;
-    height: 100px;
-    top: 3850px;
+    height: 16vh;
+    top: 616vh; /*3850px*/
     left: 0px;
     display: flex;
     flex-direction: column;

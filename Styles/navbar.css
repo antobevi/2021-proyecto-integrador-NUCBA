@@ -1,10 +1,8 @@
-.nav-section {
+nav {
     background-color: #FFDC5E;
-    margin: 0px;
     width: 100%;
-    height: 100px;
-    top: 0px;
-    left: 0px;
+    height: 17vh;
+    /*equivalente a 100px*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,28 +10,38 @@
     z-index: 1;
 }
 
+ul {
+    display: inline-block;
+}
+
+li {
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .logo {
-    margin: 20px;
+    margin: 10px;
     background-image: url("../Images/adopcion.png");
     background-size: cover;
     width: 70px;
     height: 70px;
 }
 
-.links {
-    margin: 20px;
+/* Cómo se ven los links con la etiqueta a en el navbar */
+.links-nav {
     padding: 10px;
     font-size: 18px;
     text-decoration: none;
     color: white;
+}
 
+.links-nav:hover {
+    color: #FF86C8;
     transition: color 1s;
 }
 
-.links:hover {
-    color: #FF86C8;
-}
-
+/* Cómo se ven los links con la etiqueta a en un botón */
 .links-button {
     padding: 10px;
     font-size: 18px;
@@ -43,16 +51,93 @@
 }
 
 .log-in-button {
-    margin: 40px;
     padding: 15px;
     color: white;
     border-style: none;
-    border-radius:35px;
+    border-radius: 35px;
     background-color: #f9779b;
-
-    transition: background-color 1s;
 }
 
-.log-in-button:hover {
-    background-color: #fb97ee;
+/* Burger menu */
+
+.burger-menu {
+    font-size: 2rem;
+    color: white;
+    display: none; /* Solo cuando la pantalla es mas chica, el icono aparece */
+}
+
+.new-menu {
+    display: inline-block;
+    flex-direction: row;
+    position: relative;
+}
+
+.change-menu {
+    display: none;
+}
+
+.link-change {
+    display: none;
+}
+
+/* Media queries */
+
+/* Comportamiento para pantallas mas chicas que una laptop solo en el caso del Navbar */
+@media (max-width: 979px) {
+    ul {
+        padding: 0px;
+        width: 100%;
+        display: block;
+    }
+    
+    li {
+        width: 100%;
+        margin: 15px;
+        display: block;
+    }
+
+    li:hover {
+        background-color: #ffc800;
+    }
+
+    /* Burger menu */
+    .burger-menu {
+        margin: 20px;
+        font-size: 2rem;
+        color: white;
+        display: inline-block !important;
+    }
+
+    .link-change {
+        display: inline-block;
+    }
+
+    .links-nav:hover {
+        color: white;
+    }
+
+    .new-menu {
+        display: none !important;
+    }
+
+    .change-menu:checked~.new-menu {
+        width: 50%;
+        height: 60vh;
+        top: 17vh; /* equivalente a 100px */
+        left: 50%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        background-color: #FFDC5E;
+        text-align: center;
+
+        /* TODO: Agregar animacion/transicion al abrir y cerrar el menu */
+    }
+
+    .log-in-button {
+        display: none; /* Para que desaparezca el boton */
+    }
 }

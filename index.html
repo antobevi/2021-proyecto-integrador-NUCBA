@@ -9,6 +9,7 @@
     <title>Rescatando patitas</title>
 
     <link rel="shortcut icon" href="./Images/pata.ico" />
+    <link href="./Images/Icons/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
 
     <link href="./Styles/index.css" rel=stylesheet />
     <link href="./Styles/navbar.css" rel=stylesheet />
@@ -22,144 +23,181 @@
 <body>
 
     <header>
-        <nav class="nav-section">
+        <nav>
             <!-- TODO: Ver como abstraer el navbar despues -->
             <div class="logo"></div>
-            <div class="center-section">
-                <a class="links" href="#front-page">Home</a>
-                <a class="links" href="#owners">Dueños</a>
-                <a class="links" href="#rescuers">Rescatistas</a>
-                <a class="links" href="#adopters">Adoptantes</a>
-                <a class="links" href="#us">Nosotros</a>
-                <a class="links" href="#contact-us">Contacto</a>
+
+            <div class="container">
+                <label for="change">
+                    <i class="fas fa-bars burger-menu"></i>
+                    <!-- Para que el icono coincida con la cajita del checkbox -->
+                </label>
+                <input type="checkbox" class="change-menu" name="change" id="change">
+                <!-- Para la cajita del checkbox -->
+
+                <div class="new-menu">
+                    <ul>
+                        <li>
+                            <a class="links-nav" href="#front-page">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="links-nav" href="#owners">Dueños</a>
+                        </li>
+                        <li>
+                            <a class="links-nav" href="#rescuers">Rescatistas</a>
+                        </li>
+                        <li>
+                            <a class="links-nav" href="#adopters">Adoptantes</a>
+                        </li>
+                        <li>
+                            <a class="links-nav" href="#us">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="links-nav" href="#contact-us">Contacto</a>
+                        </li>
+                        <li class="link-change">
+                            <a class="links-nav" href="./Screens/log-in.html">Log in</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <button class="log-in-button">
                 <a class="links-button" href="./Screens/log-in.html">Log in</a>
             </button>
         </nav>
+
+        <!-- Seccion de la portada de la pagina -->
+
+        <div class="front-page" id="front-page">
+            <h1 class="title">Rescatando patitas</h1>
+            <p style="font-family: 'Amatic SC', cursive; font-size: 40px;">No vamos a cambiar el mundo ayudando a un
+                animal,
+                pero al menos el mundo habrá cambiado para él.</p>
+            <img src="./Images/casa-de-mascotas.png" style="background-size: cover; width: 200px; height: 200px;">
+        </div>
     </header>
 
-    <!-- Seccion de la portada de la pagina -->
+    <main>
+        <!-- Seccion de dueños -->
 
-    <div class="front-page" id="front-page">
-        <h1 class="title">Rescatando patitas</h1>
-        <p style="font-family: 'Amatic SC', cursive; font-size: 40px;">No vamos a cambiar el mundo ayudando a un animal,
-            pero al menos el mundo habrá cambiado para él.</p>
-        <img src="./Images/casa-de-mascotas.png" style="background-size: cover; width: 200px; height: 200px;">
-    </div>
-
-    <!-- Seccion de dueños -->
-
-    <div class="owners-section" id="owners">
-        <div class="information-section">
-            <h2 class="title">Dueños</h2>
-            <p style="font-size: 20px; width: 60%;">Acá vas a poder registrar a todas tus mascotas y recibir una chapita
-                con un código QR por cada una de ellas. Si alguna vez una se
-                pierde, podes generar un aviso y de esa forma será más fácil encontrarla!</p>
-            <button>
-                <a class="links-button" href="#">Quiero registrar a mi mascota</a>
-            </button>
-        </div>
-        <div class="owners-section-background"></div>
-    </div>
-
-    <!-- Seccion de rescatistas -->
-
-    <div class="rescuers-section" id="rescuers">
-        <div class="recuers-section-background"></div>
-        <div class="information-section" style="color: #FF86C8;">
-            <h2 class="title" style="height: 5px;">Rescatistas</h2>
-            <p style="font-size: 20px; width: 60%;">¿Encontraste una mascota? Si tiene su chapita identificatoria,
-                podes darle aviso al dueño escaneando el código QR que figura en la misma. Si no tiene una chapita,
-                podes publicarla acá y buscarle un hogar transitorio hasta que alguien la adopte!
-            </p>
-            <button>
-                <a class="links-button" href="#">Encontre una mascota</a>
-            </button>
-        </div>
-    </div>
-
-    <!-- Seccion de adoptantes -->
-
-    <div class="adopters-section" id="adopters">
-        <div class="information-section" style="color: white;">
-            <h2 class="title">Adoptantes</h2>
-            <p style="font-size: 20px; width: 60%;">
-                ¿Querés adoptar? Mirá a continuación el listado de mascotas esperando a recibir mucho amor! Recordá que
-                el acto de adopción
-                implica mucho más que abrirle las puertas de tu hogar, los animales necesitan comida, alguna revisión
-                médica de vez en cuando, un techo, mucho amor y otros cuidados.
-                Así que pensalo bien! Seamos responsables al adoptar.
-            </p>
-            <button>
-                <a class="links-button" href="#">Quiero adoptar una mascota</a>
-            </button>
-        </div>
-        <div class="adopters-section-background"></div>
-    </div>
-
-    <!-- Seccion de nosotros -->
-
-    <div class="us-section" id="us">
-        <div class="information-section" style="color: #FFA3A5;">
-            <h2 class="title">Nosotros</h2>
-            <p style="font-size: 20px; width: 60%;">
-                Este proyecto nació en el 2022 con el objetivo de combatir el creciente aumento de animales en situación
-                de calle
-                y ayudar a aquellos que son maltratados y abandonados a diario.
-            </p>
-        </div>
-    </div>
-
-    <!-- Seccion de contacto -->
-
-    <div class="contact-us-section" id="contact-us">
-        <div class="container-contact-us">
-            <h2 class="title">Contactanos!</h2>
-
-            <div class="form-section">
-                <form>
-                    <div class="input-section">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Ingrese su nombre">
-                    </div>
-                    <div class="input-section">
-                        <label for="surname">Apellido</label>
-                        <input type="text" id="surname" placeholder="Ingrese su apellido">
-                    </div>
-                    <div class="input-section">
-                        <label for="mail">E-mail</label>
-                        <input type="email" id="mail" placeholder="Ingrese su email">
-                    </div>
-                </form>
-                <form>
-                    <div class="input-section">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" placeholder="Dejanos un mensaje!"></textarea>
-                    </div>
-                </form>
+        <section class="owners-section" id="owners">
+            <!-- Indica una sección en particular de la página -->
+            <div class="information-section">
+                <h2 class="title">Dueños</h2>
+                <p style="font-size: 20px; width: 60%;">Acá vas a poder registrar a todas tus mascotas y recibir una
+                    chapita
+                    con un código QR por cada una de ellas. Si alguna vez una se
+                    pierde, podes generar un aviso y de esa forma será más fácil encontrarla!</p>
+                <button>
+                    <a class="links-button" href="#">Quiero registrar a mi mascota</a>
+                </button>
             </div>
+            <div class="owners-section-background"></div>
+        </section>
 
-            <button style="width: 30%;">Enviar mensaje</button>
-        </div>
-    </div>
+        <!-- Seccion de rescatistas -->
+
+        <section class="rescuers-section" id="rescuers">
+            <!-- Indica una sección en particular de la página -->
+            <div class="recuers-section-background"></div>
+            <div class="information-section" style="color: #FF86C8;">
+                <h2 class="title" style="height: 5px;">Rescatistas</h2>
+                <p style="font-size: 20px; width: 60%;">¿Encontraste una mascota? Si tiene su chapita identificatoria,
+                    podes darle aviso al dueño escaneando el código QR que figura en la misma. Si no tiene una chapita,
+                    podes publicarla acá y buscarle un hogar transitorio hasta que alguien la adopte!
+                </p>
+                <button>
+                    <a class="links-button" href="#">Encontre una mascota</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seccion de adoptantes -->
+
+        <section class="adopters-section" id="adopters">
+            <!-- Indica una sección en particular de la página -->
+            <div class="information-section" style="color: white;">
+                <h2 class="title">Adoptantes</h2>
+                <p style="font-size: 20px; width: 60%;">
+                    ¿Querés adoptar? Mirá a continuación el listado de mascotas esperando a recibir mucho amor! Recordá
+                    que
+                    el acto de adopción
+                    implica mucho más que abrirle las puertas de tu hogar, los animales necesitan comida, alguna
+                    revisión
+                    médica de vez en cuando, un techo, mucho amor y otros cuidados.
+                    Así que pensalo bien! Seamos responsables al adoptar.
+                </p>
+                <button>
+                    <a class="links-button" href="#">Quiero adoptar una mascota</a>
+                </button>
+            </div>
+            <div class="adopters-section-background"></div>
+        </section>
+
+        <!-- Seccion de nosotros -->
+
+        <section class="us-section" id="us">
+            <!-- Indica una sección en particular de la página -->
+            <div class="information-section" style="color: #FFA3A5;">
+                <h2 class="title">Nosotros</h2>
+                <p style="font-size: 20px; width: 60%;">
+                    Este proyecto nació en el 2022 con el objetivo de combatir el creciente aumento de animales en
+                    situación
+                    de calle
+                    y ayudar a aquellos que son maltratados y abandonados a diario.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seccion de contacto -->
+
+        <section class="contact-us-section" id="contact-us">
+            <!-- Indica una sección en particular de la página -->
+            <div class="container-contact-us">
+                <h2 class="title">Contactanos!</h2>
+
+                <div class="form-section">
+                    <form>
+                        <div class="input-section">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="input-section">
+                            <label for="surname">Apellido</label>
+                            <input type="text" id="surname" placeholder="Ingrese su apellido">
+                        </div>
+                        <div class="input-section">
+                            <label for="mail">E-mail</label>
+                            <input type="email" id="mail" placeholder="Ingrese su email">
+                        </div>
+                    </form>
+                    <form>
+                        <div class="input-section">
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" placeholder="Dejanos un mensaje!"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <button style="width: 30%;">Enviar mensaje</button>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
 
     <footer class="footer-section">
-            <!--div class="logo" style="width: 50px; height: 50px; background-size: cover;"></div-->
-
-            <div class="credits">
+        <!--div class="logo" style="width: 50px; height: 50px; background-size: cover;"></div-->
+        <!--div class="credits">
                 Iconos diseñados por
                 <a style="text-decoration: none; color: #FF86C8; margin: 10px;" href="https://www.freepik.com"
                     title="Freepik" target="_blank">Freepik</a> de
                 <a style="text-decoration: none; color: #FF86C8; margin: 10px;" href="https://www.flaticon.es/"
                     title="Flaticon" target="_blank">www.flaticon.es</a>
-            </div>
-
-            <div class="line"></div>
-
-            <p>Copyright © 2022 All Rights Reserved by <span>Rescatando patitas</span></p>
+        </div-->
+        <!--div class="line"></div-->
+        <p>Copyright © 2022 All Rights Reserved by <span>Rescatando patitas</span></p>
     </footer>
 
 </body>
