@@ -83,7 +83,7 @@ li {
 /* Media queries */
 
 /* Comportamiento para pantallas mas chicas que una laptop solo en el caso del Navbar */
-@media (max-width: 979px) {
+@media (max-width: 1016px) { /* o 979px?*/
     ul {
         padding: 0px;
         width: 100%;

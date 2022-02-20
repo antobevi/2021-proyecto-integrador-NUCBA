@@ -12,11 +12,22 @@ body {
 }
 
 .title {
-    height: 10px;
+    height: 15px;
     font-family: 'Staatliches', cursive;
     font-size: 6rem;
 
     /*transition: margin-left 3s; para la animacion*/
+}
+
+.sub-title {
+    width: 90%;
+    font-family: 'Amatic SC', cursive; 
+    font-size: 2.5rem;
+}
+
+p {
+    width: 60%;
+    font-size: 1.3rem;
 }
 
 .information-section {
@@ -42,6 +53,12 @@ body {
     flex-direction: column;
     color: #ff9770;
     /*ffad01 amarillo, ff958c rojo anaranjado*/
+}
+
+.front-page-image {
+    width: 200px; 
+    height: 200px;
+    background-size: cover;
 }
 
 /* Seccion de dueños */
@@ -238,3 +255,27 @@ button:hover {
     text-decoration: none;
     color: white;
 }
+
+/* Media queries para celular */
+
+@media(max-width: 576px) {
+
+    /* Titulos de cada seccion, incluido el de la front page, parrafor y subtitulos */
+    .title {
+        font-size: 3rem;
+    }
+    
+    .sub-title {
+        font-size: 1.6rem;
+    }
+
+    p {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+
+}
+
+/* Media queries para tablet */
+
+@media(min-width: 768px) and (max-width: 992px) {}
