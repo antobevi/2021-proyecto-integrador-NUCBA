@@ -7,8 +7,15 @@
 body {
     font-family: 'Varela Round', sans-serif;
     overflow-x: hidden;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+section {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 
 .title-front-page {
@@ -36,8 +43,8 @@ p {
     font-size: 1.3rem;
 }
 
+/* Descripción de cada sección que se muestra en la home */
 .information-section {
-    /* Descripción de cada sección que se muestra en la home */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -272,20 +279,23 @@ button:hover {
     }
 
     .title-section {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .sub-title {
         font-size: 1.6rem;
     }
 
-    p {
-        font-size: 1rem;
-    }
-
     .information-section {
         width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
+
+    /* Saco las imagenes ya que para
+    celulares el tamaño es demasiado
+    pequeño como para que se puedan ver
+    bien, incluso con media queries. */
 
     /* Seccion dueños */
     .owners-section-image {
