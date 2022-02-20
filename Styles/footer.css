@@ -4,12 +4,11 @@
     top: 616vh; /*3850px*/
     left: 0px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     background-color: #FFDC5E;
     color: white;
-    position: absolute;
 }
 
 .credits {

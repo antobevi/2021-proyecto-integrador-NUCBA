@@ -11,12 +11,18 @@ body {
     padding: 0;
 }
 
-.title {
+.title-front-page {
     height: 15px;
     font-family: 'Staatliches', cursive;
     font-size: 6rem;
 
     /*transition: margin-left 3s; para la animacion*/
+}
+
+.title-section {
+    height: 15px;
+    font-family: 'Staatliches', cursive;
+    font-size: 6rem;
 }
 
 .sub-title {
@@ -26,12 +32,13 @@ body {
 }
 
 p {
-    width: 60%;
+    width: 80%;
     font-size: 1.3rem;
 }
 
 .information-section {
     /* Descripción de cada sección que se muestra en la home */
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,12 +84,11 @@ p {
     color: white;
 }
 
-.owners-section-background {
-    background-image: url(../Images/fondo-perrito.jpg);
+.owners-section-image {
+    width: 50%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
     position: relative;
 }
 
@@ -97,14 +103,14 @@ p {
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    color: #FF86C8;
 }
 
-.recuers-section-background {
-    background-image: url(../Images/mascotas-rescatadas.gif);
+.recuers-section-image {
+    width: 50%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 160%;
-    height: 100%;
     position: relative;
 }
 
@@ -119,16 +125,16 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-
+    color: white;
     background-color: #FFA3A5;
+    
 }
 
-.adopters-section-background {
-    background-image: url(../Images/perrito-adoptado.gif);
+.adopters-section-image {
+    width: 50%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200%;
-    height: 100%;
     position: relative;
 }
 
@@ -143,6 +149,7 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
+    color: #FFA3A5;
 }
 
 /* Seccion contactanos */
@@ -155,7 +162,6 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-
     color: white;
     background-color: #ff7f51;
 }
@@ -261,8 +267,12 @@ button:hover {
 @media(max-width: 576px) {
 
     /* Titulos de cada seccion, incluido el de la front page, parrafor y subtitulos */
-    .title {
+    .title-front-page {
         font-size: 3rem;
+    }
+
+    .title-section {
+        font-size: 2rem;
     }
     
     .sub-title {
@@ -270,8 +280,26 @@ button:hover {
     }
 
     p {
-        width: 60%;
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+
+    .information-section {
+        width: 100%;
+    }
+
+    /* Seccion dueños */
+    .owners-section-image {
+        display: none;
+    }
+
+    /* Seccion de rescatistas */
+    .recuers-section-image {
+        display: none;
+    }
+
+    /* Seccion de adoptantes */
+    .adopters-section-image {
+        display: none;
     }
 
 }
