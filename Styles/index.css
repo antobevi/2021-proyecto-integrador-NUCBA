@@ -75,6 +75,14 @@ p {
     background-size: cover;
 }
 
+.section-image {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 /* Seccion de dueños */
 
 .owners-section {
@@ -91,14 +99,6 @@ p {
     color: white;
 }
 
-.owners-section-image {
-    width: 50%;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 /* Seccion de rescatistas */
 
 .rescuers-section {
@@ -111,14 +111,6 @@ p {
     align-items: center;
     position: absolute;
     color: #FF86C8;
-}
-
-.recuers-section-image {
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
 /* Seccion de adoptantes */
@@ -135,14 +127,6 @@ p {
     color: white;
     background-color: #FFA3A5;
     
-}
-
-.adopters-section-image {
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
 /* Seccion explicativa de la organización */
@@ -273,6 +257,10 @@ button:hover {
 
 @media(max-width: 576px) {
 
+    section {
+        padding: 20px; /*Revisar*/
+    }
+
     /* Titulos de cada seccion, incluido el de la front page, parrafor y subtitulos */
     .title-front-page {
         font-size: 3rem;
@@ -297,18 +285,7 @@ button:hover {
     pequeño como para que se puedan ver
     bien, incluso con media queries. */
 
-    /* Seccion dueños */
-    .owners-section-image {
-        display: none;
-    }
-
-    /* Seccion de rescatistas */
-    .recuers-section-image {
-        display: none;
-    }
-
-    /* Seccion de adoptantes */
-    .adopters-section-image {
+    .section-image {
         display: none;
     }
 
