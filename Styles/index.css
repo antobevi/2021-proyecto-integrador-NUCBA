@@ -248,6 +248,11 @@ button:hover {
     color: white;
 }
 
+.footer-letter {
+    width: 100%;
+    font-size: 1rem;
+}
+
 /* Media queries para celular */
 
 @media(max-width: 576px) {
@@ -281,6 +286,10 @@ button:hover {
     }
 
     /* Seccion contactanos */
+    .contact-us-section {
+        justify-content: center;
+    }
+
     .form-section {
         flex-direction: column;
     }
@@ -288,6 +297,12 @@ button:hover {
     .input-section {
         margin: 5px;
         justify-content: space-between;
+    }
+
+    /* Footer */
+    .footer-letter {
+        width: 100%;
+        font-size: 0.7rem;
     }
 
 }
