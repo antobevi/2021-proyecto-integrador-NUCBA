@@ -281,10 +281,6 @@ button:hover {
     }
 
     /* Seccion contactanos */
-    .contact-us-section {
-        justify-content: center;
-    }
-
     .form-section {
         flex-direction: column;
     }
