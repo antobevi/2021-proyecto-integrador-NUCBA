@@ -31,8 +31,9 @@ body {
     background-color: #dd2d4a;
 }
 
-a {
+.link-adopt {
     font-size: 1.1rem;
+    font-weight: 550;
     text-decoration: none;
     color: white;
 }

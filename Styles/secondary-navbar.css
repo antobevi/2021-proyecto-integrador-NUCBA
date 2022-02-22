@@ -43,9 +43,8 @@ li {
 
 /* Cómo se ven los links con la etiqueta a en un botón */
 .links-button {
-    padding: 15px;
+    padding: 10px;
     font-size: 1.1rem;
-    font-weight: 550;
     text-decoration: none;
     color: white;
 }
