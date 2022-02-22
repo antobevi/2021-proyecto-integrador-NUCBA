@@ -7,6 +7,99 @@
 body {
     font-family: 'Varela Round', sans-serif;
     overflow-x: hidden;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.button-card {
+    margin: 15px;
+    padding: 15px;
+    color: white;
+    border-style: none;
+    border-radius: 35px;
+    background-color: #ffbf00;
+    
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    transition: background-color 1s;
+}
+
+.button-card:hover {
+    background-color: #dd2d4a;
+}
+
+a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    width: 95%;
+    margin: 0px;
+}
+
+.listing-container {
+    display: inline-block;
+}
+
+.listing {
+    width: 300px;
+    height: 450px;
+
+    text-decoration: none;
+    display: inline-block;
+}
+
+h5 {
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.pets-cards-section {
+    width: 100%;
+    height: 100vh;
+    top: 16vh; /*100px*/
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+.pets-list {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    flex-direction: row;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    border: 2px solid rgb(255, 130, 172); /*rgb(156, 156, 156)*/
+    border-radius: 5%;
+    background-color: rgb(255, 235, 168);
+}
+
+.pet-photo {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
