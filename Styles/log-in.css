@@ -99,3 +99,27 @@ a {
 a:hover {
     color: #FFDC5E;
 }
+
+/* Media queries para celular */
+
+@media(max-width: 576px) {
+
+    .log-in-section {
+        width: 70%;
+        height: 50%;
+    }
+
+    label {
+        width: 30%;
+    }
+
+    input {
+        width: 60%;
+        padding: 30px;
+    }
+
+    button {
+        width: 60%;
+    }
+
+}
