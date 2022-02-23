@@ -106,11 +106,12 @@ a:hover {
 
     .log-in-section {
         width: 70%;
-        height: 50%;
+        height: 60%;
     }
 
     label {
-        width: 30%;
+        width: 40%;
+        background-color: #FFDC5E;
     }
 
     input {
