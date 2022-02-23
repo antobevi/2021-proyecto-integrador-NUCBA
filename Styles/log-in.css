@@ -14,7 +14,7 @@ body {
 }
 
 .log-in-section {
-    width: 50%;
+    width: 60%;
     height: 60%;
     border-radius: 20px;
     background-color: #c9184a;
@@ -54,12 +54,16 @@ label {
 }
 
 input {
-    width: 70%;
+    width: 60%;
     height: 40px;
     font-size: 16px;
     border-radius: 20px;
     border: none;
     padding: 20px;
+}
+
+input:focus {
+    outline: #ffc188 solid;
 }
 
 button {
@@ -107,20 +111,6 @@ a:hover {
     .log-in-section {
         width: 70%;
         height: 60%;
-    }
-
-    label {
-        width: 40%;
-        background-color: #FFDC5E;
-    }
-
-    input {
-        width: 60%;
-        padding: 30px;
-    }
-
-    button {
-        width: 60%;
     }
 
 }
