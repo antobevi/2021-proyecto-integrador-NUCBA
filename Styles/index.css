@@ -309,7 +309,7 @@ button:hover {
 
 /* Media queries para tablet */
 
-@media(min-width: 712px) and (max-width: 992px) {
+@media(min-width: 576px) and (max-width: 992px) {
 
     section {
         padding: 20px; /*Revisar*/
