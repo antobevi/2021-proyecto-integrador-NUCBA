@@ -263,6 +263,7 @@ button:hover {
 
     /* Titulos de cada seccion, incluido el de la front page, parrafor y subtitulos */
     .title {
+        height: 40px;
         font-size: 3rem;
     }
     
@@ -295,7 +296,6 @@ button:hover {
     }
 
     .input-section {
-        margin: 5px;
         justify-content: space-between;
     }
 
@@ -309,10 +309,48 @@ button:hover {
 
 /* Media queries para tablet */
 
-@media(min-width: 768px) and (max-width: 992px) {
+@media(min-width: 712px) and (max-width: 992px) {
 
     section {
         padding: 20px; /*Revisar*/
+    }
+
+    .title {
+        height: 40px;
+    }
+
+    .information-section {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    p {
+        width: 90%;
+    }
+
+    .section-image {
+        display: none;
+    }
+
+    /* Seccion contactanos */
+    .contact-us-section {
+        justify-content: center;
+    }
+
+    .form-section {
+        flex-direction: column;
+    }
+
+    .input-section {
+        margin: 5px;
+        justify-content: space-between;
+    }
+
+    /* Footer */
+    .footer-letter {
+        width: 100%;
+        font-size: 0.7rem;
     }
 
 }

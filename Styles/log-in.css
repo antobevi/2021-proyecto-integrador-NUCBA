@@ -103,14 +103,3 @@ a {
 a:hover {
     color: #FFDC5E;
 }
-
-/* Media queries para celular */
-
-@media(max-width: 576px) {
-
-    .log-in-section {
-        width: 70%;
-        height: 60%;
-    }
-
-}
