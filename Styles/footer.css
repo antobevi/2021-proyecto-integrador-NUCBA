@@ -31,6 +31,7 @@ footer {
 
     /* Footer */
     .footer-letter {
+        padding: 20px;
         font-size: 0.7rem;
     }
 

@@ -254,9 +254,9 @@ textarea:focus {
 
 @media(max-width: 576px) {
 
-    /*section {
+    section {
         padding: 20px;
-    }*/
+    }
 
     /* Titulos de cada seccion, incluido el de la front page, parrafor y subtitulos */
     .title {
@@ -302,9 +302,9 @@ textarea:focus {
 
 @media(min-width: 576px) and (max-width: 992px) {
 
-    /*section {
+    section {
         padding: 20px;
-    }*/
+    }
 
     .title {
         height: 40px;

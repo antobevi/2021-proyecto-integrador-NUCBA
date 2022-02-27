@@ -94,6 +94,7 @@ button {
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    overflow: auto;
 }
 
 .pets-list {
@@ -138,24 +139,4 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-}
-
-/* Footer */
-
-footer {
-    width: 100%;
-    height: 16vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0px;
-
-    color: white;
-    background-color: #FFDC5E;
-}
-
-.footer-letter {
-    width: 100%;
-    font-size: 1.1rem;
 }
