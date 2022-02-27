@@ -303,7 +303,7 @@ textarea:focus {
 @media(min-width: 576px) and (max-width: 992px) {
 
     section {
-        padding: 20px;
+        padding: 25px;
     }
 
     .title {

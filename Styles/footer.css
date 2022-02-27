@@ -1,6 +1,8 @@
 /* Footer */
 
 footer {
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 16vh;
     display: flex;
@@ -29,9 +31,11 @@ footer {
 
 @media (max-width: 992px) {
 
-    /* Footer */
-    .footer-letter {
+    footer {
         padding: 20px;
+    }
+
+    .footer-letter {
         font-size: 0.7rem;
     }
 
