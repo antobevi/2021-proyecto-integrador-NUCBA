@@ -11,6 +11,7 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +55,7 @@ h5 {
 button {
     margin: 20px;
     padding: 15px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .button-card {
