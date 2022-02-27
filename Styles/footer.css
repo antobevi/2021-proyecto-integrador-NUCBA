@@ -33,18 +33,11 @@ footer {
 
     footer {
         padding: 20px;
+        height: 14vh;
     }
 
     .footer-letter {
         font-size: 0.7rem;
-    }
-
-}
-
-@media (max-width: 992px) {
-
-    footer {
-        height: 14vh;
     }
 
 }
